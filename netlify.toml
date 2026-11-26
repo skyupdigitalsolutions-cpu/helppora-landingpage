@@ -1,0 +1,7 @@
+[build]
+  command = "npm install --prefix client && npm run build --prefix client"
+  publish = "client/dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
